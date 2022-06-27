@@ -31,5 +31,13 @@
         android:textSize="20sp"
         tools:ignore="HardcodedText" />
 
+    <Button
+        android:id="@+id/bankAccount_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bank Account"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
 
 </LinearLayout>
