@@ -39,5 +39,13 @@
         android:textSize="20sp"
         tools:ignore="HardcodedText" />
 
+    <Button
+        android:id="@+id/recyclerView_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Views and Lists"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
 
 </LinearLayout>

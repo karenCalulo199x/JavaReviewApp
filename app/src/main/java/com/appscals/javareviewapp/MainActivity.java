@@ -1,6 +1,7 @@
 package com.appscals.javareviewapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +11,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    Button buttonOps,buttonBank;
+    Button buttonOps,buttonBank, viewLists;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         buttonOps = findViewById(R.id.operators_btn);
         buttonBank = findViewById(R.id.bankAccount_btn);
+        viewLists = findViewById(R.id.recyclerView_btn);
 
         buttonOps.setOnClickListener(view -> {
             String message =
@@ -34,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
             ToastLogClass.showCustomDialog(MainActivity.this, "Input Text 1:", "Input Text 2", false);
         });
 
+        viewLists.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, ListExampleActivity.class);
+            startActivity(intent);
+        });
     }
 
 }
